@@ -2,16 +2,6 @@
 
 This is a Spring Boot API that provides two key endpoints for managing tax statements. It includes features like asynchronous parsing and persistence using Hibernate, retry mechanisms with exponential backoff, and configurable active service hours. The API uses Testcontainers for testing, Swagger UI for documentation, and a simple PostgreSQL table for storing tax statements.
 
-## Features
-
-- **File Upload Endpoint**: Accepts a PDF tax statement, parses it, and persists the data asynchronously using Hibernate.
-- **Forward Endpoint**: Sends the tax statement to an external API and receives their response.
-- **Asynchronous Parsing & Persistence**: Utilizes Hibernate for persistent storage, with asynchronous processing.
-- **Retry Mechanism**: Implements exponential backoff with a maximum number of attempts for retrying failed requests to the external API.
-- **Configurable Service Hours**: The active hours for the service can be easily configured using environmental variables.
-- **Testcontainers for End-to-End Testing**: Uses Dockerized PostgreSQL and other services to ensure comprehensive integration tests.
-- **Swagger UI**: Interactive API documentation powered by Swagger for easy exploration and testing of endpoints.
-
 ## Technology Stack
 
 - **Spring Boot** (Java 17)
@@ -20,7 +10,6 @@ This is a Spring Boot API that provides two key endpoints for managing tax state
 - **Testcontainers** (for integration tests)
 - **Swagger UI** (for API documentation)
 - **Retry Mechanism with Exponential Backoff**
-- **Spring Security** (Optional, for securing endpoints)
 - **Spring Web & RestTemplate** (for external API calls)
 
 ## Setup & Configuration
